@@ -5,11 +5,12 @@
     "node": "10.11.0"
   },
   "description": "",
-  "main": "index.js",
+  "main": "index.js", 
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"E rror: no test specified\" && exit 1",
     "serve": "live-server public/",
     "build": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
